@@ -1,0 +1,3 @@
+import "./toTuple.ts";
+
+export {};

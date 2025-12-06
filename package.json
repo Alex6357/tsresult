@@ -1,0 +1,89 @@
+{
+  "name": "tsresult",
+  "version": "1.0.0",
+  "description": "Implement Rust-like Result and Option types for TypeScript",
+  "keywords": [
+    "typescript",
+    "rust",
+    "result",
+    "option",
+    "error-safe",
+    "error-handling",
+    "type-safe",
+    "monad"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Alex6357",
+    "url": "https://github.com/Alex6357"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./core": {
+      "types": "./dist/core/index.d.ts",
+      "default": "./dist/core/index.js"
+    },
+    "./core/newable": {
+      "types": "./dist/core/newable.d.ts",
+      "default": "./dist/core/newable.js"
+    },
+    "./extensions/result/*": {
+      "types": "./dist/extensions/result/*.d.ts",
+      "default": "./dist/extensions/result/*.js"
+    },
+    "./extnesions/option/*": {
+      "types": "./dist/extensions/option/*.d.ts",
+      "default": "./dist/extensions/option/*.js"
+    },
+    "./extensions/all": {
+      "types": "./dist/extensions/all.d.ts",
+      "default": "./dist/extensions/all.js"
+    },
+    "./extensions": {
+      "types": "./dist/extensions/index.d.ts",
+      "default": "./dist/extensions/index.js"
+    }
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "check": "tsc --noEmit",
+    "format": "prettier --write src/**/*.ts",
+    "lint": "eslint --fix src/**/*.ts",
+    "prepublishOnly": "pnpm format && pnpm lint && pnpm build",
+    "test": "pnpm jest"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@jest/globals": "^30.2.0",
+    "@types/node": "^24.10.1",
+    "eslint": "^9.39.1",
+    "jest": "^30.2.0",
+    "jiti": "^2.6.1",
+    "prettier": "^3.7.4",
+    "rimraf": "^6.1.2",
+    "ts-jest": "^29.4.6",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.48.1"
+  },
+  "packageManager": "pnpm@10.24.0+sha512.01ff8ae71b4419903b65c60fb2dc9d34cf8bb6e06d03bde112ef38f7a34d6904c424ba66bea5cdcf12890230bf39f9580473140ed9c946fef328b6e5238a345a",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": ">=10.0.0 <11"
+    },
+    "runtime": {
+      "name": "node",
+      "version": ">=24.0.0"
+    }
+  }
+}
