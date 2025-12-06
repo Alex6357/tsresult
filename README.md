@@ -1,7 +1,7 @@
 # tsresult
 
-[![NPM Version](https://img.shields.io/npm/v/tsresult)](https://www.npmjs.com/package/tsresult)
-[![License](https://img.shields.io/npm/l/tsresult)](https://github.com/Alex6357/tsresult/blob/main/LICENSE)
+[![NPM Version](https://img.shields.io/npm/v/@alex6357/tsresult)](https://www.npmjs.com/package/@alex6357/tsresult)
+[![License](https://img.shields.io/npm/l/@alex6357/tsresult)](https://github.com/Alex6357/tsresult/blob/main/LICENSE)
 
 A TypeScript library that implements Rust-like Result and Option types for safer error handling and nullable value management.
 
