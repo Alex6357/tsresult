@@ -1,5 +1,5 @@
 {
-  "name": "tsresult",
+  "name": "@alex6357/tsresult",
   "version": "1.0.0",
   "description": "Implement Rust-like Result and Option types for TypeScript",
   "keywords": [
